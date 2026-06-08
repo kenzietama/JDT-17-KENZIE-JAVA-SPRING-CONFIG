@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring.dasar.config
+  messages:
+    basename: language/messages
+    encoding: UTF-8
+    cache-duration: 3600
+store:
+  name: "Indivara Mini Store"
+  city: "Jakarta"
+  currency: "IDR"
+  max-daily-order: 100
+  active: true

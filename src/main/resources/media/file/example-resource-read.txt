@@ -1,0 +1,15 @@
+@Component
+@RequiredArgsConstructor
+public class ResourceSample {
+
+    private ApplicationContext applicationContext;
+
+    @PostConstruct
+    public void readSampleResource() throws IOException {
+        Resource resource = new ClassPathResource("/media/file/example-resource-read.txt");
+
+        // Membaca isi file
+        String content = resource.getContentAsString(StandardCharsets.UTF_8);
+        System.out.println(content);
+    }
+}
